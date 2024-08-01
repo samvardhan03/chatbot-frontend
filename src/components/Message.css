@@ -1,18 +1,30 @@
 .message {
-    padding: 10px 20px;
-    border-radius: 20px;
-    max-width: 80%;
-  }
-  
-  .message.user {
-    background: #007bff;
-    color: #fff;
-    align-self: flex-end;
-  }
-  
-  .message.bot {
-    background: #e4e6eb;
-    color: #000;
-    align-self: flex-start;
-  }
-  
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.message.user {
+  justify-content: flex-end;
+}
+
+.message.bot {
+  justify-content: flex-start;
+}
+
+.message-content {
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: white;
+}
+
+.message.user .message-content {
+  background-color: #0056b3;
+}
+
+.message.bot .message-content {
+  background-color: #ddd;
+  color: black;
+}
