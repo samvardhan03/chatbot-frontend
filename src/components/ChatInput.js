@@ -22,3 +22,11 @@ const ChatInput = ({ sendMessage }) => {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
+      <button type="submit">
+        <FontAwesomeIcon icon={faPaperPlane} />
+      </button>
+    </form>
+  );
+};
+
+export default ChatInput;
