@@ -8,8 +8,8 @@ const App = () => {
     <div className="app">
       <header className="app-header">
         <img src={logo} className="app-logo" alt="logo" />
-        <h1>Cadassist</h1>
-        <h2>Your AI powered Autocad assistant</h2>
+        <h1>BOB</h1>
+        <h2>Your AI powered financial assistant</h2>
       </header>
       <div className="chat-wrapper">
         <Chat />
