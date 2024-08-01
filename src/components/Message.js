@@ -4,7 +4,9 @@ import './Message.css';
 const Message = ({ message }) => {
   return (
     <div className={`message ${message.sender}`}>
-      {message.text}
+      <div className="message-content">
+        {message.text}
+      </div>
     </div>
   );
 };
